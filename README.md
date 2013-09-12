@@ -13,7 +13,7 @@ A friend of a keyboard.
 
 ## Installation
 
-    $ gem install mirelutter
+    $ gem install mirelutter (coming soon!)
 
 ## Usage
 
