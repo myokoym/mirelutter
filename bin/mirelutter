@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require "mirelutter/command/mirelutter"
+
+Mirelutter::Command::Mirelutter.run(*ARGV)

@@ -1,4 +1,4 @@
-module Mireru
+module Mirelutter
   class Logger
     def initialize
     end

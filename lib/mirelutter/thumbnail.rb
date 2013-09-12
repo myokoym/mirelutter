@@ -1,7 +1,7 @@
 require "gtk3"
-require "mireru/widget"
+require "mirelutter/widget"
 
-module Mireru
+module Mirelutter
   class Thumbnail
     class << self
       def create(files, width, height)

@@ -1,4 +1,4 @@
-module Mireru
+module Mirelutter
   class Container
     def initialize(files=[])
       @files = files.select {|file| file?(file) }

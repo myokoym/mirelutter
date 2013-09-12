@@ -1,8 +1,8 @@
 require "clutter-gtk"
 require "clutter-gst"
-require "mireru/widget"
+require "mirelutter/widget"
 
-module Mireru
+module Mirelutter
   class Video
     class << self
       def create(file)

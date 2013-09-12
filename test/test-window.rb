@@ -1,8 +1,8 @@
-require "mireru/window"
+require "mirelutter/window"
 
 class WindowTest < Test::Unit::TestCase
   def setup
-    @window = Mireru::Window.new
+    @window = Mirelutter::Window.new
   end
 
   def test_add_container
@@ -14,7 +14,7 @@ class WindowTest < Test::Unit::TestCase
 
   def test_add_from_file_of_scrollable
     file = __FILE__
-    mock(Mireru::Widget).create(file, *@window.size) do
+    mock(Mirelutter::Widget).create(file, *@window.size) do
       Gtk::TextView.new
     end
     mock(@window).show_all
@@ -25,7 +25,7 @@ class WindowTest < Test::Unit::TestCase
 
   def test_add_from_file_of_no_scrollable
     file = "fixtures/nijip.png"
-    mock(Mireru::Widget).create(file, *@window.size) do
+    mock(Mirelutter::Widget).create(file, *@window.size) do
       Gtk::Image.new
     end
     mock(@window).show_all

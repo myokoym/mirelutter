@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'mireru/version'
+require 'mirelutter/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "mireru"
-  spec.version       = Mireru::VERSION
+  spec.name          = "mirelutter"
+  spec.version       = Mirelutter::VERSION
   spec.authors       = ["Masafumi Yokoyama"]
   spec.email         = ["myokoym@gmail.com"]
   spec.summary       = %q{Flexible File Viewer Keyboard Friend}
   spec.description   = %q{A file viewer with a focus on flexibility by Ruby/GTK3. A friend of a keyboard.}
-  spec.homepage      = "https://github.com/myokoym/mireru"
+  spec.homepage      = "https://github.com/myokoym/mirelutter"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

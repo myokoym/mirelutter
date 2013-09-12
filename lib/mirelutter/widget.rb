@@ -1,8 +1,8 @@
 require "gtk3"
 require "gtksourceview3"
-require "mireru/video"
+require "mirelutter/video"
 
-module Mireru
+module Mirelutter
   class Error < StandardError
   end
 
@@ -18,11 +18,11 @@ module Mireru
           image.pixbuf = pixbuf
           widget = image
         elsif video?(file)
-          widget = Mireru::Video.create(file)
+          widget = Mirelutter::Video.create(file)
         else
           begin
             buffer = buffer_from_file(file)
-          rescue Mireru::Error
+          rescue Mirelutter::Error
             return sorry
           end
           view = GtkSource::View.new(buffer)
@@ -53,7 +53,7 @@ module Mireru
       end
 
       def buffer_from_text(text)
-        raise Mireru::Error unless text.valid_encoding?
+        raise Mirelutter::Error unless text.valid_encoding?
         text.encode!("utf-8") unless text.encoding == "utf-8"
         buffer = GtkSource::Buffer.new
         buffer.text = text

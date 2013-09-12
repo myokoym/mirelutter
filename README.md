@@ -1,8 +1,10 @@
-# Mireru - Flexible File Viewer Keyboard Friend
+# Mirelutter - Flexible File Viewer Keyboard Friend
 
-A file viewer with a focus on flexibility by Ruby/GTK3.
+A file viewer with a focus on flexibility by Ruby/Clutter.
 
 A friend of a keyboard.
+
+(This is a [mireru](https://github.com/myokoym/mireru)'s clone.)
 
 ## Requirements
 
@@ -11,13 +13,13 @@ A friend of a keyboard.
 
 ## Installation
 
-    $ gem install mireru
+    $ gem install mirelutter
 
 ## Usage
 
 ### Launch
 
-    $ mireru [OPTION]... [FILE]...
+    $ mirelutter [OPTION]... [FILE]...
 
 If no argument, then search current directory.
 
